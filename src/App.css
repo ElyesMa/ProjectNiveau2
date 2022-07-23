@@ -1,0 +1,100 @@
+.App {
+  text-align: center;
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+.Headermenu {
+  background-color:yellow;
+  position: absolute;
+  top: 10;
+  left: 1000;
+  right: 0;
+  height: 200px;
+  width: 180px;
+  color: #373b69;
+  padding: 1rem;
+  transform: translateY(-200%) ;
+  transition: transform 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+
+}
+
+.show-Headermenu {
+  transform: translateY(0%);
+
+}
+
+::-webkit-input-placeholder {
+  font-size: 15px;
+}
+
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	40% {
+		-webkit-transform: translateY(-30px);
+		-ms-transform:     translateY(-30px);
+		transform:         translateY(-30px)
+	}
+	60% {
+		-webkit-transform: translateY(-15px);
+		-ms-transform:     translateY(-15px);
+		transform:         translateY(-15px)
+	}
+}
+.bubble{   
+  display: flex;
+  flex-direction: column;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 230px;
+  height: 230px;
+  text-align: center;
+  justify-content: center;
+  font-weight: 800;
+  transition: 2s;
+  position: absolute;
+  background-image: url('./images/bubble.png');
+
+ 
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+.bubble:hover {
+    cursor: pointer;
+    animation-name: bounce;
+    -moz-animation-name: bounce;
+    
+  
+  }
+
+  .menu{
+    background-image: url('./images/BI.png'); 
+    margin-top: 10px;
+    width: 1400px;
+    height: 1100px;
+    background-repeat: no-repeat;
+    margin-right: auto;
+    margin-left: auto;
+    background-size: 100%;
+    position: relative;
+    text-align: center;
+  }
